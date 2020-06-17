@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://nana4774.github.io/portfolio/" />
+  <meta property="og:title" content="ナンジャモンジャゲーム" />
+  <meta property="og:description" content="ポートフォリオ用に作ったゲームです。" />
+  <meta property="og:image" content="https://nana4774.github.io/portfolio/imgs/cards10.png">
+  <link rel="icon" href="imgs/favicon.png"
+  type="image/png">
+  <link rel="icon" href="imgs/favicon.png"
+  type="image/png">
+  <title>ナンジャモンジャゲーム</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="game">
+    <div class="left">
+      <p><span id="count">0</span>/15</p>
+      <div class="score1">
+        <img src="imgs/correct.png" alt="">
+        <p id="correct">0</p>
+      </div>
+      <div class="score2">
+        <img src="imgs/incorrect.png" alt="">
+        <p id= "incorrect">0</p>
+      </div>
+    </div>
+    <p id="right" class="right" onmousemove="">How to play</p>
+    <div id="explanation" class="explanation">
+      <ol >
+        <li>カードをクリック</li>
+        <li>初めて出てきたキャラクターの場合は名前をつけて、<br>２回目以降の場合はつけた名前を入力する</li>
+      </ol>
+    </div>
+    <img id="pic1" src="imgs/character1.png" alt="character1">
+    <img id="pic2" src="imgs/character2.png" alt="character2">
+    <img id="pic3" src="imgs/character3.png" alt="character3">
+    <img id="pic4" src="imgs/character4.png" alt="character4">
+    <img id="pic5" src="imgs/character5.png" alt="character5">
+    <img id="card" class="card" src="imgs/cards10.png" alt="card">
+    <p id="start" class="btn start">START</p>
+    <div id="question">
+      <div id="videos">
+        <video id="video1" src="videos/character1.mp4" poster="imgs/character1.png" autoplay muted playsinline loop></video>
+        <video id="video2" src="videos/character2.mp4" poster="imgs/character2.png" autoplay muted playsinline loop></video>
+        <video id="video3" src="videos/character3.mp4" poster="imgs/character3.png" autoplay muted playsinline loop></video>
+        <video id="video4" src="videos/character4.mp4" poster="imgs/character4.png" autoplay muted playsinline loop></video>
+        <video id="video5" src="videos/character5.mp4" poster="imgs/character5.png" autoplay muted playsinline loop></video>
+      </div>
+      <div id="answer" class="answer">
+        <input id="text" type="text">
+        <input id="submit" type="submit" value="OK">
+      </div>
+    </div>
+    <div>
+    </div>
+    <p id="retry" class="btn retry">RETRY</p>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
